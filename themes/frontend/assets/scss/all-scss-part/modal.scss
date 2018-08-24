@@ -1,0 +1,111 @@
+@import 'all-mixing';
+.cust-my-modal{
+    z-index:999999 !important;
+    .modal-content{
+        @include border-radius(0px);
+        background-color:#2F363B;
+    }
+    .modal-header{
+        background-color: transparent;
+        border-bottom: none;
+        color: #494949;
+        min-height: 16.4286px;
+        position: relative;
+        padding: 20px 0;
+        .close {
+           color: #ccc;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 1;
+        }
+        .modal-title {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 0px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    .modal-body{
+        padding-bottom: 30px;
+        padding-top: 0;
+        .fotm{
+                margin-bottom: 20px;
+            .form-group{
+                margin-bottom: 15px;
+                label {
+                    font-size: 16px;
+                    color: #333333;
+                    font-weight:400;
+                }
+                .form-control{
+                    border: none;
+                    height: 43px;
+                    border-radius: 0px;
+                    font-size: 13px;   
+                    color: #ccc;
+                    background-color: #171C1E;
+                }
+
+                .fr-txt-area {
+                    min-height: 200px;
+                }
+
+            }
+            .btn{
+                font-size: 14px;
+                color: #fff;
+                background-color: #39f;
+                letter-spacing: 0;
+                border-radius: 0;
+                padding: 10px 60px;
+                border: none;
+                &:hover{
+                    color: #39f;
+                    background-color: #fff;
+                }
+            }
+            
+        }
+        .fotget-pass{
+                margin-top: 0px;
+                text-align: center;
+                a{
+                    font-size: 14px;
+                    color: #3399FF;
+                    font-weight: 600;
+                    &:hover{
+                         color:#fff;
+                    }
+                }
+            }
+        ul{
+            display: inline-block;
+            border-bottom: none;
+            margin-bottom: 12px;
+            li{
+                a{
+                    color:#fff;
+                    border: none;
+                    &:hover{
+                        background-color: #39f;
+                        color: #fff;
+                        border: none;
+                    }
+                } 
+                &.active{
+                    a{
+                        background-color: #39f;
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

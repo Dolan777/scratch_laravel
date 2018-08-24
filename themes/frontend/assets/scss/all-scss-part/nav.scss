@@ -1,0 +1,322 @@
+@import 'all-mixing.scss';
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding: 0px 0;
+    background-color: rgba(35, 31, 32, 0);
+     &.darkHeader{
+        background-color: #2C3337;
+        z-index: 999!important;
+    }
+    .navbar-custom{
+        padding: 1px 0;
+        border-color: transparent !important;
+        margin-bottom: 0;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-radius: 0;
+        width: 100%;
+        padding: 0px 0;
+        .site-logo{
+            padding-top:0px;
+            img{
+                margin: 0 auto;
+                display: inline-block;
+            }
+        }
+       
+        ul.nav{
+            margin-top: 0px;
+            float: none;
+            text-align: center;
+            display: inline-block;
+            li{ 
+                padding: 0;
+                margin: 0px 8px;
+                a {
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    border: 1px solid transparent;
+                    padding: 10px 10px 8px 10px;
+                    border-radius: 3px;
+                    border-bottom: 2px solid transparent;
+                    &:focus{
+                        outline: none;
+                        background: transparent;
+                    }
+                    &:hover{
+                        color: #fff;
+                        background-color: transparent;
+                    }
+
+
+                }
+
+                /*                .btn.btn-signin {
+                                    background-color: #BF1E2E;
+                                    color: #fff !important;
+                                    padding: 7px 15px;
+                                    @include transition(all 500ms ease-in-out);
+                                    @include border-radius(0);
+                                    font-size: 16px;
+                                }
+                                .btn.btn-signin:hover{
+                                    color: #fff;
+                                    background-color:#F5210A ;
+                
+                                }
+                                .btn.btn-signin:hover i{
+                                    color: #fff;
+                
+                
+                                }*/
+                .btn.btn-signup {
+                    .header .navbar-custom ul.nav li .btn.btn-signup {
+                        background-color: hsla(0,0%,100%,0);
+                        color: #fff;
+                        padding: 5px 10px;
+                        transition: all .5s ease-in-out;
+                        border:1px solid transparent;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        border-radius: 3px;
+                        /* text-transform: none; */
+                        margin-right: 20px;
+                    }
+                }
+                .btn.btn-signup:hover{
+                    color: #fff;
+                    background-color: #1bc0d3;
+                    border: 1px solid transparent;
+
+                }
+                .dash-drop{
+                    margin: 8px 0 0;
+                    cursor: pointer;
+                }
+
+                .headr-prof-pic {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid #f0f0f0;
+                    display: inline;
+                    font-size: 18px;
+                    color: #333;
+                    border-radius: 50%;
+                }
+
+                .cst-drop-down{
+                    margin-top:30px;
+                    .dropdown-menu{
+                        li{
+                            a{
+                                padding: 20px 15px;
+                                border-bottom: 1px solid rgba(57, 32, 97, 0.1);
+                            }
+                        }
+                    }
+                }
+
+                h1 {
+                    color: #fff;
+                    display: inline;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .dropdown-menu {
+                    border-top: 2px solid #392061;
+                    width: 100%;
+                    padding: 0px 0px;
+                    li{
+                        a{
+                            font-size: 14px;
+                            color: #3B3B3B;
+                        }
+                        &:hover{
+                            background-color: #F8F8F8;
+                        }
+                    }
+                }
+                &.active{
+                    border-bottom: 2px solid #FFFFFF;
+                }
+                &:hover{
+                        color: #fff;
+                        background-color: transparent;
+                        border-bottom: 2px solid #FFFFFF;
+                    }
+            }
+
+        }
+        
+        .navbar-header{
+            float: none;
+                text-align: center;
+        }
+    }
+    &.inner-header{
+        background-color: #272727;
+    }
+
+    .custom-search-input {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        .input-group{
+            color: #6E2D6D;
+            font-size:11px;
+            span.input-group-btn{
+                position: absolute;
+                right:0;
+            }
+        }
+    }
+
+    .custom-search-input .search-query {
+        border-radius: 3px;
+        height: 26px;
+        line-height: 25px;
+        margin-top: 0;
+        max-width: 100%;
+        padding: 2px 5px;
+        position: relative;
+        width: 310px;
+        padding-right: 30px;
+
+    }
+
+    .custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#6E2D6D;
+    }
+
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+}
+
+
+
+.left_link{
+    li{
+        font-size: 13px;
+        font-weight: 600;
+        a{
+             color: #fff;
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.right_link{
+    li{
+        font-size: 13px;
+        font-weight: 600;
+        a{
+              color: #fff;
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.tp-part-head{
+           padding: 15px 0px;
+}
+.padding-ok{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.txt-rgt{
+    text-align: right;
+}
+.cst-border{
+ border: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 0;
+    border-right: 0;
+    font-size: 0;
+}
+.left_link{
+    li{
+        a{
+            color: #fff;
+        }
+    }
+}
+
+
+.search-form {
+    .form-group {
+        float: right !important;
+        transition: all 0.35s, border-radius 0s;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        input.form-control {
+            padding-right: 20px;
+            border: 0 none;
+            background: transparent;
+            box-shadow: none;
+            display: block;
+            &::-webkit-input-placeholder {
+                display: none;
+            }
+            &:-moz-placeholder {
+                display: none;
+            }
+            &::-moz-placeholder {
+                display: none;
+            }
+            &:-ms-input-placeholder {
+                display: none;
+            }
+        }
+        &:hover {
+            width: 100%;
+            border-radius: 4px 25px 25px 4px;
+        }
+        span.form-control-feedback {
+            position: absolute;
+            top: -1px;
+            right: -2px;
+            z-index: 2;
+            display: block;
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            color: #3596e0;
+            left: initial;
+            font-size: 14px;
+        }
+    }
+    .form-group.hover {
+        width: 100%;
+        border-radius: 4px 25px 25px 4px;
+    }
+}
+
+

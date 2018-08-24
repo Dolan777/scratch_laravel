@@ -1,0 +1,24 @@
+dev-deployment:
+  variables:
+    GIT_STRATEGY: fetch
+  script:
+    - bash ~/gitlab/dev/deploy-laravel.sh
+  environment:
+      name: Development
+      url : http://newtestserver.com/dev/scificafe/
+  tags:
+    - laravel-dev
+  only:
+    - dev 
+apps-deployment:    
+  variables:
+      GIT_STRATEGY: fetch
+  script:
+    - bash ~/gitlab/apps/deploy-laravel.sh
+  environment:
+      name: UAT
+      url : http://newtestserver.com/apps/scificafe/
+  tags:
+    - laravel-apps
+  only:
+    - apps

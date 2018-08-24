@@ -1,0 +1,15 @@
+
+.footer .ftr-single-sec img{
+   width: 100% !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+   
+}
+
+.header .navbar-custom ul.nav li {
+    padding: 0;
+    margin: 0 8px;
+    border-bottom: 2px solid transparent;
+}
